@@ -1,3 +1,4 @@
+(comment
 (ns philosopher-database-test
   (:require [clojure.test :refer :all]
             [logical-interpreter :refer :all]))
@@ -41,3 +42,4 @@
   (testing "filosofo(gallinadesplumada) should be false"
     (is (= (evaluate-query philosopher-database "filosofo(gallinadesplumada)")
            false))))
+)
